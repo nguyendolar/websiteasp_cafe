@@ -229,12 +229,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\DAO\UserDao.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\Admin\AdminAuthenticationController.cs" />
+    <Compile Include="Controllers\Admin\AdminHomeController.cs" />
     <Compile Include="Controllers\Admin\AdminModulesController.cs" />
+    <Compile Include="Controllers\AuthencationController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ModulesController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Daos\CategoryDao.cs" />
+    <Compile Include="Daos\ProductDao.cs" />
+    <Compile Include="Daos\UserDao.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -1034,9 +1042,18 @@
     <Content Include="Views\AdminModules\Header.cshtml" />
     <Content Include="Views\AdminModules\Footer.cshtml" />
     <Content Include="Views\AdminModules\Menu.cshtml" />
+<<<<<<< HEAD
+    <Content Include="Views\AdminAuthentication\Login.cshtml" />
+    <Content Include="Views\AdminHome\Index.cshtml" />
+=======
+    <Content Include="Views\Authentication\Login.cshtml" />
+    <Content Include="Views\Authentication\Signup.cshtml" />
+>>>>>>> 91fda9303b6d8b34549b0bdce25902fddaebefd7
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Authencation\" />
+    <Folder Include="Views\Product\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
