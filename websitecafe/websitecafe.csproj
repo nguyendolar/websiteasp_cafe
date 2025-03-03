@@ -233,8 +233,13 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\Admin\AdminModulesController.cs" />
+    <Compile Include="Controllers\AuthencationController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ModulesController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Daos\CategoryDao.cs" />
+    <Compile Include="Daos\ProductDao.cs" />
+    <Compile Include="Daos\UserDao.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -1034,9 +1039,13 @@
     <Content Include="Views\AdminModules\Header.cshtml" />
     <Content Include="Views\AdminModules\Footer.cshtml" />
     <Content Include="Views\AdminModules\Menu.cshtml" />
+    <Content Include="Views\Authentication\Login.cshtml" />
+    <Content Include="Views\Authentication\Signup.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Authencation\" />
+    <Folder Include="Views\Product\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
