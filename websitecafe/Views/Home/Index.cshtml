@@ -64,7 +64,7 @@
                                 <img src="https://toplistcafe.com/wp-content/uploads/2021/01/torani-1.jpg" class="img-fluid mb-3" alt="@product.Name">
                                 <div class="title-div justify-content-between d-flex">
                                     <h4>@product.Name</h4>
-                                    <p class="price float-right">@product.Price VNĐ</p>
+                                    <p class="price float-right">@String.Format("{0:N0} VNĐ", product.Price)</p> <!-- Định dạng tiền tệ -->
                                 </div>
                                 <p>@product.Description</p>
                                 <p class="text-muted"><i class="fa fa-eye"></i> @product.View lượt xem</p>

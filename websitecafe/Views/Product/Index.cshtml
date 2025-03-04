@@ -1,34 +1,43 @@
 ﻿@model List<websitecafe.Models.Product>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Danh sách sản phẩm";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <style>
-    /* Phân trang mặc định màu trắng */
+    /* Phân trang */
     .pagination .page-item .page-link {
         background-color: white;
-        color: #6F4E37; /* Màu cà phê */
+        color: #6F4E37;
         border: 1px solid #6F4E37;
     }
 
-    /* Khi active sẽ chuyển sang màu cà phê */
     .pagination .page-item.active .page-link {
         background-color: #6F4E37;
         color: white;
         border-color: #6F4E37;
     }
 
-    /* Hover hiệu ứng màu cà phê nhạt */
     .pagination .page-item .page-link:hover {
         background-color: #EDE0D4;
         color: #6F4E37;
     }
+
+    /* Nhãn danh mục */
+    .category-label {
+        font-weight: bold;
+        color: #6F4E37;
+        background: #EDE0D4;
+        display: inline-block;
+        padding: 5px 10px;
+        border-radius: 15px;
+        font-size: 14px;
+    }
 </style>
 <style>
     .banner-area {
-        background: #5a3d2b;
+        background: #6F4E37;
         padding: 40px 0;
         color: white;
         text-align: left;
@@ -36,11 +45,37 @@
 
     .primary-btn {
         background: white;
-        color: #5a3d2b;
+        color: #6F4E37;
         padding: 6px 12px;
         border-radius: 4px;
         font-weight: bold;
     }
+    .btn-coffee {
+        background-color: #6F4E37; /* Màu cà phê */
+        color: white;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background 0.3s, transform 0.2s;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+        .btn-coffee:hover {
+            background-color: #5a3d2b; /* Màu cà phê đậm hơn */
+            color: white;
+            transform: scale(1.05); /* Hiệu ứng phóng to nhẹ */
+            box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-coffee:active {
+            background-color: #4a3225;
+            transform: scale(0.98);
+        }
+
+        .btn-coffee i {
+            margin-right: 5px;
+        }
 </style>
 
 <section class="banner-area">
@@ -48,8 +83,6 @@
       
     </div>
 </section>
-
-
 
 <section class="menu-area section-gap" id="coffee">
     <div class="container">
@@ -60,6 +93,39 @@
                 </div>
             </div>
         </div>
+
+        <!-- Bộ lọc và tìm kiếm -->
+        <form method="get" action="@Url.Action("Index", "Product")" class="mb-4" id="searchForm">
+            <div class="row">
+                <!-- Chọn danh mục (Tự động lọc) -->
+                <div class="col-md-4">
+                    <select name="categoryId" id="categoryFilter" class="form-control">
+                        <option value="">-- Chọn danh mục --</option>
+                        @foreach (var category in ViewBag.Categories)
+                        {
+                            <option value="@category.Id" @(ViewBag.CategoryId == category.Id ? "selected" : "")>
+                                @category.Name
+                            </option>
+                        }
+                    </select>
+                </div>
+
+                <!-- Ô tìm kiếm -->
+                <div class="col-md-4">
+                    <input type="text" name="search" class="form-control" placeholder="Nhập tên sản phẩm..."
+                           value="@ViewBag.Search" />
+                </div>
+
+                <!-- Nút tìm kiếm kiểu cà phê -->
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn-coffee">
+                        <i class="fa fa-coffee"></i> Tìm Cafe
+                    </button>
+                </div>
+            </div>
+        </form>
+
+        <!-- Danh sách sản phẩm -->
         <div class="row">
             @foreach (var product in Model)
             {
@@ -68,8 +134,9 @@
                         <img src="https://toplistcafe.com/wp-content/uploads/2021/01/torani-1.jpg" class="img-fluid mb-3" alt="@product.Name">
                         <div class="title-div justify-content-between d-flex">
                             <h4>@product.Name</h4>
-                            <p class="price float-right">@String.Format("{0:N0} VNĐ", product.Price)</p> <!-- Định dạng tiền tệ -->
+                            <p class="price float-right">@String.Format("{0:N0} VNĐ", product.Price)</p>
                         </div>
+                        <p class="category-label"><i class="fa fa-tag"></i> @product.Category.Name</p>
                         <p>@product.Description</p>
                         <p class="text-muted"><i class="fa fa-eye"></i> @product.View lượt xem</p>
                     </div>
@@ -85,21 +152,21 @@
                         @if (ViewBag.CurrentPage > 1)
                         {
                             <li class="page-item">
-                                <a class="page-link" href="@Url.Action("Index", new { page = ViewBag.CurrentPage - 1 })">«</a>
+                                <a class="page-link" href="@Url.Action("Index", new { page = ViewBag.CurrentPage - 1, categoryId = ViewBag.CategoryId, search = ViewBag.Search })">«</a>
                             </li>
                         }
 
                         @for (int i = 1; i <= ViewBag.TotalPages; i++)
                         {
                             <li class="page-item @(i == ViewBag.CurrentPage ? "active" : "")">
-                                <a class="page-link" href="@Url.Action("Index", new { page = i })">@i</a>
+                                <a class="page-link" href="@Url.Action("Index", new { page = i, categoryId = ViewBag.CategoryId, search = ViewBag.Search })">@i</a>
                             </li>
                         }
 
                         @if (ViewBag.CurrentPage < ViewBag.TotalPages)
                         {
                             <li class="page-item">
-                                <a class="page-link" href="@Url.Action("Index", new { page = ViewBag.CurrentPage + 1 })">»</a>
+                                <a class="page-link" href="@Url.Action("Index", new { page = ViewBag.CurrentPage + 1, categoryId = ViewBag.CategoryId, search = ViewBag.Search })">»</a>
                             </li>
                         }
                     </ul>
@@ -108,3 +175,9 @@
         </div>
     </div>
 </section>
+
+<script>
+    document.getElementById("categoryFilter").addEventListener("change", function () {
+        document.getElementById("searchForm").submit();
+    });
+</script>

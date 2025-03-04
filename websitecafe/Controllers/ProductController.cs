@@ -9,16 +9,23 @@ namespace websitecafe.Controllers
 {
     public class ProductController : Controller
     {
-        public ActionResult Index(int page = 1)
-        {
-            int pageSize = 6; // Số sản phẩm trên mỗi trang
-            int totalProducts;
+        private readonly ProductDao _productDao;
 
-            ProductDao productDao = new ProductDao();
-            var products = productDao.GetProductsByPage(page, pageSize, out totalProducts);
+        public ProductController()
+        {
+            _productDao = new ProductDao();
+        }
+
+        public ActionResult Index(int page = 1, int pageSize = 6, int? categoryId = null, string search = "")
+        {
+            int totalProducts;
+            var products = _productDao.GetProductsByPage(page, pageSize, out totalProducts, categoryId, search);
 
             ViewBag.CurrentPage = page;
-            ViewBag.TotalPages = (int)Math.Ceiling((double)totalProducts / pageSize);
+            ViewBag.TotalPages = (int)System.Math.Ceiling((double)totalProducts / pageSize);
+            ViewBag.Search = search;
+            ViewBag.CategoryId = categoryId;
+            ViewBag.Categories = _productDao.GetAllCategories(); // Lấy danh sách danh mục
 
             return View(products);
         }
