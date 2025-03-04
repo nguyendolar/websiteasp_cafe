@@ -1,57 +1,44 @@
-﻿
-@*<div id="layoutSidenav_nav">
-    @{ var userInfomatiom = (YTeAspMVC.Models.User)Session["ADMIN"]; }
-    <nav style="background-color: #CCCCCC !important" class="sb-sidenav accordion " id="sidenavAccordion">
+﻿<div id="layoutSidenav_nav">
+    @{ var userInfomatiom = (websitecafe.Models.User)Session["ADMIN"]; }
+    <nav class="sb-sidenav accordion bg-light" id="sidenavAccordion">
         <div class="sb-sidenav-menu">
-            <div class="nav">
-                <a class="nav-link collapsed" href="/AdminHome/Index">
-                    <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                    Bảng điều khiển
+            <div class="nav flex-column">
+
+                <!-- Dashboard -->
+                <a class="nav-link" href="/AdminHome/Index">
+                    <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    Dashboard
+                </a>
+                <hr class="my-2">
+
+                <!-- Quản lý Cafe -->
+                <a class="nav-link" href="/AdminProduct/Index">
+                    <div class="sb-nav-link-icon"><i class="fas fa-coffee"></i></div>
+                    Quản lý Cafe
+                </a>
+                <hr class="my-2">
+
+                <!-- Quản lý Người Dùng -->
+                <a class="nav-link" href="/AdminUser/Index">
+                    <div class="sb-nav-link-icon"><i class="fas fa-users"></i></div>
+                    Quản lý Người Dùng
+                </a>
+                <hr class="my-2">
+
+                <!-- Cài đặt -->
+                <a class="nav-link" href="/AdminSettings/Index">
+                    <div class="sb-nav-link-icon"><i class="fas fa-cog"></i></div>
+                    Cài đặt
+                </a>
+                <hr class="my-2">
+
+                <!-- Đăng xuất -->
+                <a class="nav-link text-danger" href="/AdminAuthen/Logout">
+                    <div class="sb-nav-link-icon"><i class="fas fa-sign-out-alt"></i></div>
+                    Đăng xuất
                 </a>
 
-                @if (userInfomatiom == null)
-                {
-                    <a class="nav-link collapsed" href="/AdminBooking/Doctor">
-                        <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                        Danh sách lịch hẹn
-                    </a>
-                    <a class="nav-link collapsed" href="/AdminAdvise/Index">
-                        <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                        Danh sách câu hỏi
-                    </a>
-                }
-                else
-                {
-                    <a class="nav-link collapsed" href="/AdminDoctor/Index">
-                        <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                        Quản lý bác sĩ
-                    </a>
-                    <a class="nav-link collapsed" href="/AdminService/Index">
-                        <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                        Quản lý dịch vụ
-                    </a>
-                    <a class="nav-link collapsed" href="/AdminPost/Index">
-                        <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                        Quản lý tin tức
-                    </a>
-                    <a class="nav-link collapsed" href="/AdminUser/Index">
-                        <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                        Quản lý người dùng
-                    </a>
-                    <a class="nav-link collapsed" href="/AdminBooking/Index">
-                        <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                        Quản lý lịch hẹn
-                    </a>
-                    <a class="nav-link collapsed" href="/AdminBooking/History">
-                        <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                        Lịch sử lịch hẹn
-                    </a>
-                }
             </div>
         </div>
     </nav>
-</div>*@
-
-
-
-
+</div>

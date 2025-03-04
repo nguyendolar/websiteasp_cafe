@@ -10,9 +10,9 @@ namespace websitecafe.DAO
     {
         private readonly DBWebcafeContext _context;
 
-        public ProductDao(DBWebcafeContext context)
+        public ProductDao()
         {
-            _context = context;
+            _context = new DBWebcafeContext();
         }
 
         public List<Product> GetAllProducts()

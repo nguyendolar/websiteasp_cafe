@@ -9,9 +9,9 @@ namespace websitecafe.DAO
     {
         private readonly DBWebcafeContext _context;
 
-        public CategoryDao(DBWebcafeContext context)
+        public CategoryDao()
         {
-            _context = context;
+            _context = new DBWebcafeContext();
         }
 
         public List<Category> GetAllCategories()

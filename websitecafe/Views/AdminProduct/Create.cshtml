@@ -1,0 +1,42 @@
+﻿@model websitecafe.Models.Product
+
+@{
+    ViewBag.Title = "Thêm sản phẩm";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container mt-4">
+    <h2>Thêm Sản Phẩm</h2>
+    @using (Html.BeginForm("Create", "Product", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-group">
+            <label>Tên sản phẩm</label>
+            @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+        </div>
+
+        <div class="form-group">
+            <label>Giá</label>
+            @Html.TextBoxFor(model => model.Price, new { @class = "form-control" })
+        </div>
+
+        <div class="form-group">
+            <label>Mô tả</label>
+            @Html.TextAreaFor(model => model.Description, new { @class = "form-control", rows = 3 })
+        </div>
+
+        <div class="form-group">
+            <label>Hình ảnh</label>
+            <input type="file" name="ImageFile" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label>Loại Cafe</label>
+            @Html.DropDownList("CategoryId", null, "Chọn loại", new { @class = "form-control" })
+        </div>
+
+        <button type="submit" class="btn btn-success mt-3">Lưu</button>
+        <a href="@Url.Action("Index")" class="btn btn-secondary mt-3">Hủy</a>
+    }
+</div>

@@ -1,0 +1,48 @@
+﻿@model websitecafe.Models.Product
+
+@{
+    ViewBag.Title = "Chỉnh sửa sản phẩm";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container mt-4">
+    <h2>Chỉnh Sửa Sản Phẩm</h2>
+    @using (Html.BeginForm("Edit", "Product", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="form-group">
+            <label>Tên sản phẩm</label>
+            @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+        </div>
+
+        <div class="form-group">
+            <label>Giá</label>
+            @Html.TextBoxFor(model => model.Price, new { @class = "form-control" })
+        </div>
+
+        <div class="form-group">
+            <label>Mô tả</label>
+            @Html.TextAreaFor(model => model.Description, new { @class = "form-control", rows = 3 })
+        </div>
+
+        <div class="form-group">
+            <label>Ảnh hiện tại</label><br>
+            <img src="@Model.ImageUrl" width="100" />
+        </div>
+
+        <div class="form-group">
+            <label>Hình ảnh mới (nếu cần thay đổi)</label>
+            <input type="file" name="ImageFile" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label>Loại Cafe</label>
+            @Html.DropDownList("CategoryId", null, "Chọn loại", new { @class = "form-control" })
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-3">Lưu thay đổi</button>
+        <a href="@Url.Action("Index")" class="btn btn-secondary mt-3">Hủy</a>
+    }
+</div>
