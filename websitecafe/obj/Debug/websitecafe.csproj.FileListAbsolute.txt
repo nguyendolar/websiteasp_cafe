@@ -320,3 +320,4 @@ C:\Users\Administrator\Desktop\websiteasp_cafe\websitecafe\obj\Debug\websitecafe
 C:\Users\Administrator\Desktop\websiteasp_cafe\websitecafe\obj\Debug\websitec.8100D5F2.Up2Date
 C:\Users\Administrator\Desktop\websiteasp_cafe\websitecafe\obj\Debug\websitecafe.dll
 C:\Users\Administrator\Desktop\websiteasp_cafe\websitecafe\obj\Debug\websitecafe.pdb
+C:\Users\Administrator\Desktop\websiteasp_cafe\websitecafe\obj\Debug\websitecafe.Migrations.test.resources

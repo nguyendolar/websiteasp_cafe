@@ -60,14 +60,14 @@
                                          class="img-fluid">
                                 </td>
                                 <td>
-                                    @item.Price.ToString("C")
+                                    <p class="price float-right">@String.Format("{0:N0} VNĐ", item.Price)</p> <!-- Định dạng tiền tệ -->
                                 </td>
 
                                 <td>
                                     <a href="" data-bs-toggle="modal" data-bs-target="#@nameModelDes">Xem</a>
                                 </td>
                                 <td>
-                                    @item.Category.name
+                                    @item.Category.Name
                                 </td>
                                 <td>
                                     @{
@@ -141,7 +141,7 @@
                                                                 <label for="category-film"
                                                                        class="col-form-label">Loại Cafe:</label>
                                                                 <select class="form-select" aria-label="Default select example" id="theloai" tabindex="8" name="CategoryId" required>
-                                                                    <option selected value="@item.Category.CategoryId">@item.Category.Name</option>
+                                                                    <option selected value="@item.Category.Id">@item.Category.Name</option>
                                                                     @foreach (var item3 in ViewBag.listCategory)
                                                                     {
                                                                         <option value="@item3.Id">@item3.Name</option>

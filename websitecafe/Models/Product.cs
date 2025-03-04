@@ -15,7 +15,6 @@ namespace websitecafe.Models
         public string Name { get; set; }
         [Required]
         public decimal Price { get; set; }
-        [MaxLength(1000)]
         public string Description { get; set; }
         public string ImageUrl { get; set; }
         public int CategoryId { get; set; }

@@ -3,72 +3,76 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|c:\\users\\administrator\\desktop\\websiteasp_cafe\\websitecafe\\migrations\\202503041632099_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|solutionrelative:websitecafe\\migrations\\202503041632099_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\daos\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|solutionrelative:websitecafe\\daos\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|solutionrelative:websitecafe\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\daos\\productdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|solutionrelative:websitecafe\\daos\\productdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|c:\\users\\administrator\\desktop\\websiteasp_cafe\\websitecafe\\controllers\\admin\\adminproductcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|solutionrelative:websitecafe\\controllers\\admin\\adminproductcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|c:\\users\\administrator\\desktop\\websiteasp_cafe\\websitecafe\\views\\adminproduct\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\views\\adminproduct\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|solutionrelative:websitecafe\\views\\adminproduct\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|c:\\users\\administrator\\desktop\\websiteasp_cafe\\websitecafe\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|solutionrelative:websitecafe\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|c:\\users\\administrator\\desktop\\websiteasp_cafe\\websitecafe\\views\\adminhome\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\views\\adminhome\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|solutionrelative:websitecafe\\views\\adminhome\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|c:\\users\\administrator\\desktop\\websiteasp_cafe\\websitecafe\\daos\\productdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|solutionrelative:websitecafe\\daos\\productdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|c:\\users\\administrator\\desktop\\websiteasp_cafe\\websitecafe\\views\\adminmodules\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\views\\adminmodules\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|solutionrelative:websitecafe\\views\\adminmodules\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|c:\\users\\administrator\\desktop\\websiteasp_cafe\\websitecafe\\controllers\\authencationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\controllers\\authencationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|solutionrelative:websitecafe\\controllers\\authencationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|c:\\users\\administrator\\desktop\\websiteasp_cafe\\websitecafe\\views\\adminproduct\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\views\\adminproduct\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|solutionrelative:websitecafe\\views\\adminproduct\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|c:\\users\\administrator\\desktop\\websiteasp_cafe\\websitecafe\\views\\adminproduct\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\views\\adminproduct\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|solutionrelative:websitecafe\\views\\adminproduct\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|c:\\users\\administrator\\desktop\\websiteasp_cafe\\websitecafe\\controllers\\admin\\adminauthencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\controllers\\admin\\adminauthencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|solutionrelative:websitecafe\\controllers\\admin\\adminauthencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|c:\\users\\administrator\\desktop\\websiteasp_cafe\\websitecafe\\views\\adminmodules\\header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\views\\adminmodules\\header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|solutionrelative:websitecafe\\views\\adminmodules\\header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|c:\\users\\administrator\\desktop\\websiteasp_cafe\\websitecafe\\views\\adminmodules\\footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\views\\adminmodules\\footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|solutionrelative:websitecafe\\views\\adminmodules\\footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|c:\\users\\administrator\\desktop\\websiteasp_cafe\\websitecafe\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|solutionrelative:websitecafe\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|c:\\users\\administrator\\desktop\\websiteasp_cafe\\websitecafe\\views\\adminauthen\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\views\\adminauthen\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|solutionrelative:websitecafe\\views\\adminauthen\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|c:\\users\\administrator\\desktop\\websiteasp_cafe\\websitecafe\\controllers\\admin\\adminhomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\controllers\\admin\\adminhomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|solutionrelative:websitecafe\\controllers\\admin\\adminhomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|c:\\users\\administrator\\desktop\\websiteasp_cafe\\websitecafe\\controllers\\admin\\adminmodulescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\controllers\\admin\\adminmodulescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|solutionrelative:websitecafe\\controllers\\admin\\adminmodulescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|c:\\users\\administrator\\desktop\\websiteasp_cafe\\websitecafe\\daos\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B14203D1-B5B8-497A-A2F3-8B59B611D520}|websitecafe\\websitecafe.csproj|solutionrelative:websitecafe\\daos\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -78,50 +82,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\Views\\AdminProduct\\Index.cshtml",
-              "RelativeDocumentMoniker": "websitecafe\\Views\\AdminProduct\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\Views\\AdminProduct\\Index.cshtml",
-              "RelativeToolTip": "websitecafe\\Views\\AdminProduct\\Index.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAmwC4AAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-04T15:26:36.25Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AdminProductController.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\Controllers\\Admin\\AdminProductController.cs",
-              "RelativeDocumentMoniker": "websitecafe\\Controllers\\Admin\\AdminProductController.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\Controllers\\Admin\\AdminProductController.cs",
-              "RelativeToolTip": "websitecafe\\Controllers\\Admin\\AdminProductController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
+              "Title": "202503041632099_test.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\Migrations\\202503041632099_test.cs",
+              "RelativeDocumentMoniker": "websitecafe\\Migrations\\202503041632099_test.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\Migrations\\202503041632099_test.cs",
+              "RelativeToolTip": "websitecafe\\Migrations\\202503041632099_test.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T15:19:03.674Z",
+              "WhenOpened": "2025-03-04T16:32:15.384Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "websitecafe\\Models\\Product.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\Models\\Product.cs",
-              "RelativeToolTip": "websitecafe\\Models\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T15:17:02.698Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Menu.cshtml",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\Views\\AdminModules\\Menu.cshtml",
               "RelativeDocumentMoniker": "websitecafe\\Views\\AdminModules\\Menu.cshtml",
@@ -129,12 +107,11 @@
               "RelativeToolTip": "websitecafe\\Views\\AdminModules\\Menu.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-04T15:01:42.559Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-04T15:01:42.559Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Header.cshtml",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\Views\\AdminModules\\Header.cshtml",
               "RelativeDocumentMoniker": "websitecafe\\Views\\AdminModules\\Header.cshtml",
@@ -142,12 +119,11 @@
               "RelativeToolTip": "websitecafe\\Views\\AdminModules\\Header.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-04T14:55:49.429Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-04T14:55:49.429Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Footer.cshtml",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\Views\\AdminModules\\Footer.cshtml",
               "RelativeDocumentMoniker": "websitecafe\\Views\\AdminModules\\Footer.cshtml",
@@ -155,12 +131,11 @@
               "RelativeToolTip": "websitecafe\\Views\\AdminModules\\Footer.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-04T14:55:39.179Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-04T14:55:39.179Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "AdminModulesController.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\Controllers\\Admin\\AdminModulesController.cs",
               "RelativeDocumentMoniker": "websitecafe\\Controllers\\Admin\\AdminModulesController.cs",
@@ -168,12 +143,11 @@
               "RelativeToolTip": "websitecafe\\Controllers\\Admin\\AdminModulesController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T14:55:32.909Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-04T14:55:32.909Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "AuthencationController.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\Controllers\\AuthencationController.cs",
               "RelativeDocumentMoniker": "websitecafe\\Controllers\\AuthencationController.cs",
@@ -186,7 +160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\Views\\AdminHome\\Index.cshtml",
               "RelativeDocumentMoniker": "websitecafe\\Views\\AdminHome\\Index.cshtml",
@@ -194,12 +168,11 @@
               "RelativeToolTip": "websitecafe\\Views\\AdminHome\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-04T14:55:14.489Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-04T14:55:14.489Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "AdminHomeController.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\Controllers\\Admin\\AdminHomeController.cs",
               "RelativeDocumentMoniker": "websitecafe\\Controllers\\Admin\\AdminHomeController.cs",
@@ -207,25 +180,76 @@
               "RelativeToolTip": "websitecafe\\Controllers\\Admin\\AdminHomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T14:54:53.694Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-04T14:54:53.694Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "ProductDao.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\Daos\\ProductDao.cs",
               "RelativeDocumentMoniker": "websitecafe\\Daos\\ProductDao.cs",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\Daos\\ProductDao.cs",
               "RelativeToolTip": "websitecafe\\Daos\\ProductDao.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAYwCEAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-04T15:16:56.779Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "websitecafe\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\Models\\Product.cs",
+              "RelativeToolTip": "websitecafe\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T15:17:02.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserDao.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\Daos\\UserDao.cs",
+              "RelativeDocumentMoniker": "websitecafe\\Daos\\UserDao.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\Daos\\UserDao.cs",
+              "RelativeToolTip": "websitecafe\\Daos\\UserDao.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAUwEYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T14:49:47.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdminProductController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\Controllers\\Admin\\AdminProductController.cs",
+              "RelativeDocumentMoniker": "websitecafe\\Controllers\\Admin\\AdminProductController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\Controllers\\Admin\\AdminProductController.cs",
+              "RelativeToolTip": "websitecafe\\Controllers\\Admin\\AdminProductController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowEIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T15:19:03.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\Views\\AdminProduct\\Index.cshtml",
+              "RelativeDocumentMoniker": "websitecafe\\Views\\AdminProduct\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\Views\\AdminProduct\\Index.cshtml",
+              "RelativeToolTip": "websitecafe\\Views\\AdminProduct\\Index.cshtml",
+              "ViewState": "AgIAACYAAAAAAAAAAAAmwD4AAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-04T15:26:36.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\Views\\AdminProduct\\Create.cshtml",
               "RelativeDocumentMoniker": "websitecafe\\Views\\AdminProduct\\Create.cshtml",
@@ -233,12 +257,11 @@
               "RelativeToolTip": "websitecafe\\Views\\AdminProduct\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-04T15:27:58.487Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-04T15:27:58.487Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\Views\\AdminProduct\\Edit.cshtml",
               "RelativeDocumentMoniker": "websitecafe\\Views\\AdminProduct\\Edit.cshtml",
@@ -246,12 +269,11 @@
               "RelativeToolTip": "websitecafe\\Views\\AdminProduct\\Edit.cshtml",
               "ViewState": "AgIAAAcAAAAAAAAAAAAmwBQAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-04T15:28:19.799Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-04T15:28:19.799Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\Views\\AdminAuthen\\Login.cshtml",
               "RelativeDocumentMoniker": "websitecafe\\Views\\AdminAuthen\\Login.cshtml",
@@ -259,12 +281,11 @@
               "RelativeToolTip": "websitecafe\\Views\\AdminAuthen\\Login.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-04T14:53:47.579Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-04T14:53:47.579Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "AdminAuthenController.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\Controllers\\Admin\\AdminAuthenController.cs",
               "RelativeDocumentMoniker": "websitecafe\\Controllers\\Admin\\AdminAuthenController.cs",
@@ -272,12 +293,11 @@
               "RelativeToolTip": "websitecafe\\Controllers\\Admin\\AdminAuthenController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T14:50:59.971Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-04T14:50:59.971Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "_LayoutAdmin.cshtml",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\Views\\Shared\\_LayoutAdmin.cshtml",
               "RelativeDocumentMoniker": "websitecafe\\Views\\Shared\\_LayoutAdmin.cshtml",
@@ -285,21 +305,7 @@
               "RelativeToolTip": "websitecafe\\Views\\Shared\\_LayoutAdmin.cshtml",
               "ViewState": "AgIAABEAAAAAAAAAAAAIwDgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-04T15:14:05.568Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "UserDao.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\Daos\\UserDao.cs",
-              "RelativeDocumentMoniker": "websitecafe\\Daos\\UserDao.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\websiteasp_cafe\\websitecafe\\Daos\\UserDao.cs",
-              "RelativeToolTip": "websitecafe\\Daos\\UserDao.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAA4wA0AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T14:49:47.869Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-04T15:14:05.568Z"
             }
           ]
         }
