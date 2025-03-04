@@ -6,7 +6,6 @@
 <section class="banner-area" id="home">
     <div class="container">
         <div class="row fullscreen d-flex align-items-center justify-content-start">
-            <!-- Dịch toàn bộ sang trái -->
             <div class="col-lg-5 col-md-6 col-sm-8">
                 <div class="login-box p-4">
                     <h3 class="text-center">Đăng nhập</h3>
@@ -25,6 +24,9 @@
                         </div>
                         <button type="submit" class="btn btn-coffee btn-block">Đăng nhập</button>
                     </form>
+                    <p class="mt-2 text-center">
+                        <a href="@Url.Action("ForgotPassword", "Authentication")" class="btn btn-link">Quên mật khẩu?</a>
+                    </p>
                     <p class="mt-3 text-center">
                         Chưa có tài khoản?
                         <a href="@Url.Action("Signup", "Authentication")" class="btn btn-link">Đăng ký ngay</a>
@@ -40,11 +42,11 @@
         background: white;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        margin-left: -150px; /* Dịch sang trái nhiều hơn */
+        margin-left: -150px;
     }
 
     .btn-coffee {
-        background-color: #6F4E37; /* Màu cà phê */
+        background-color: #6F4E37;
         color: white;
         border: none;
     }

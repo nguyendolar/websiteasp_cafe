@@ -76,6 +76,17 @@ namespace websitecafe.Daos
         {
             return _context.Users.Any(u => u.Email == email && u.Password == password);
         }
+
+        // Cập nhật mật khẩu người dùng
+        public void UpdatePassword(string email, string newPassword)
+        {
+            var user = _context.Users.FirstOrDefault(u => u.Email == email);
+            if (user != null)
+            {
+                user.Password = newPassword;
+                _context.SaveChanges();
+            }
+        }
     }
 
 }

@@ -12,7 +12,7 @@
                         Bắt đầu ngày mới <br>
                         với một ly Cà Phê
                     </h1>
-                    <a href="#" class="primary-btn text-uppercase">Mua ngay</a>
+                    <a href="#" class="primary-btn text-uppercase">Tìm hiểu thêm</a>
                 </div>
             </div>
         </div>
@@ -26,7 +26,7 @@
                 <div class="col-lg-6 video-right justify-content-center align-items-center d-flex">
                     <div class="overlay overlay-bg"></div>
                     <a class="play-btn" href="https://www.youtube.com/watch?v=ARA0AxrnHdM">
-                        <img class="img-fluid" src="img/play-icon.png" alt="Phát video">
+                        <img class="img-fluid" src="~/Content/img/play-icon.png" alt="Phát video">
                     </a>
                 </div>
                 <div class="col-lg-6 video-left">
@@ -37,7 +37,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim.
                     </p>
-                    <img class="img-fluid" src="img/signature.png" alt="Chữ ký">
+                    <img class="img-fluid" src="~/Content/img/signature.png" alt="Chữ ký">
                 </div>
             </div>
         </div>
@@ -55,69 +55,53 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4">
-                    <div class="single-menu text-center">
-                        <img src="https://toplistcafe.com/wp-content/uploads/2021/01/torani-1.jpg" class="img-fluid mb-3" alt="Cappuccino">
-                        <div class="title-div justify-content-between d-flex">
-                            <h4>Cappuccino</h4>
-                            <p class="price float-right">45,000 VNĐ</p>
+                @if (ViewBag.Products != null)
+                {
+                    foreach (var product in (List<websitecafe.Models.Product>)ViewBag.Products)
+                    {
+                        <div class="col-lg-4">
+                            <div class="single-menu text-center">
+                                <img src="https://toplistcafe.com/wp-content/uploads/2021/01/torani-1.jpg" class="img-fluid mb-3" alt="@product.Name">
+                                <div class="title-div justify-content-between d-flex">
+                                    <h4>@product.Name</h4>
+                                    <p class="price float-right">@product.Price VNĐ</p>
+                                </div>
+                                <p>@product.Description</p>
+                                <p class="text-muted"><i class="fa fa-eye"></i> @product.View lượt xem</p>
+                            </div>
                         </div>
-                        <p>Hương vị cafe ngon, đậm đà bản sắc dân tộc</p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-menu text-center">
-                        <img src="https://cubes-asia.com/storage/blogs/2023/cafe-americano.jpg" class="img-fluid mb-3" alt="Americano">
-                        <div class="title-div justify-content-between d-flex">
-                            <h4>Americano</h4>
-                            <p class="price float-right">45,000 VNĐ</p>
-                        </div>
-                        <p>Hương vị cafe ngon, đậm đà bản sắc dân tộc</p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-menu text-center">
-                        <img src="https://file.hstatic.net/1000075078/article/blog_f80b599183c340bca744c174e7ab2af8.jpg" class="img-fluid mb-3" alt="Espresso">
-                        <div class="title-div justify-content-between d-flex">
-                            <h4>Espresso</h4>
-                            <p class="price float-right">45,000 VNĐ</p>
-                        </div>
-                        <p>Hương vị cafe ngon, đậm đà bản sắc dân tộc</p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-menu text-center">
-                        <img src="https://toplistcafe.com/wp-content/uploads/2021/01/torani-1.jpg" class="img-fluid mb-3" alt="Cappuccino">
-                        <div class="title-div justify-content-between d-flex">
-                            <h4>Cappuccino</h4>
-                            <p class="price float-right">45,000 VNĐ</p>
-                        </div>
-                        <p>Hương vị cafe ngon, đậm đà bản sắc dân tộc</p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-menu text-center">
-                        <img src="https://cubes-asia.com/storage/blogs/2023/cafe-americano.jpg" class="img-fluid mb-3" alt="Americano">
-                        <div class="title-div justify-content-between d-flex">
-                            <h4>Americano</h4>
-                            <p class="price float-right">45,000 VNĐ</p>
-                        </div>
-                        <p>Hương vị cafe ngon, đậm đà bản sắc dân tộc</p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-menu text-center">
-                        <img src="https://file.hstatic.net/1000075078/article/blog_f80b599183c340bca744c174e7ab2af8.jpg" class="img-fluid mb-3" alt="Espresso">
-                        <div class="title-div justify-content-between d-flex">
-                            <h4>Espresso</h4>
-                            <p class="price float-right">45,000 VNĐ</p>
-                        </div>
-                        <p>Hương vị cafe ngon, đậm đà bản sắc dân tộc</p>
-                    </div>
-                </div>
+                    }
+                }
+                else
+                {
+                    <p class="text-center">Không có sản phẩm nào để hiển thị.</p>
+                }
+            </div>
+
+            <!-- Nút Xem Thêm -->
+            <div class="row d-flex justify-content-center mt-4">
+                <a href="@Url.Action("Index", "Product")" class="btn btn-coffee">Xem thêm</a>
             </div>
         </div>
     </section>
+
+    <style>
+        .btn-coffee {
+            background-color: #6F4E37; /* Màu cà phê */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+            .btn-coffee:hover {
+                background-color: #5a3d2b;
+                color: white;
+            }
+    </style>
+
     <!-- Kết thúc khu vực menu -->
     <!-- Kết thúc khu vực menu -->
     <!-- Bắt đầu khu vực thư viện ảnh -->
@@ -133,26 +117,26 @@
             </div>
             <div class="row">
                 <div class="col-lg-4">
-                    <a href="img/g1.jpg" class="img-pop-home">
-                        <img class="img-fluid" src="img/g1.jpg" alt="Ảnh 1">
+                    <a href="~/Content/img/g1.jpg" class="img-pop-home">
+                        <img class="img-fluid" src="~/Content/img/g1.jpg" alt="Ảnh 1">
                     </a>
-                    <a href="img/g2.jpg" class="img-pop-home">
-                        <img class="img-fluid" src="img/g2.jpg" alt="Ảnh 2">
+                    <a href="~/Content/img/g2.jpg" class="img-pop-home">
+                        <img class="img-fluid" src="~/Content/img/g2.jpg" alt="Ảnh 2">
                     </a>
                 </div>
                 <div class="col-lg-8">
-                    <a href="img/g3.jpg" class="img-pop-home">
-                        <img class="img-fluid" src="img/g3.jpg" alt="Ảnh 3">
+                    <a href="~/Content/img/g3.jpg" class="img-pop-home">
+                        <img class="img-fluid" src="~/Content/img/g3.jpg" alt="Ảnh 3">
                     </a>
                     <div class="row">
                         <div class="col-lg-6">
-                            <a href="img/g4.jpg" class="img-pop-home">
-                                <img class="img-fluid" src="img/g4.jpg" alt="Ảnh 4">
+                            <a href="~/Content/img/g4.jpg" class="img-pop-home">
+                                <img class="img-fluid" src="~/Content/img/g4.jpg" alt="Ảnh 4">
                             </a>
                         </div>
                         <div class="col-lg-6">
-                            <a href="img/g5.jpg" class="img-pop-home">
-                                <img class="img-fluid" src="img/g5.jpg" alt="Ảnh 5">
+                            <a href="~/Content/img/g5.jpg" class="img-pop-home">
+                                <img class="img-fluid" src="~/Content/img/g5.jpg" alt="Ảnh 5">
                             </a>
                         </div>
                     </div>
@@ -204,7 +188,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-6 col-md-6 single-blog">
-                    <img class="img-fluid" src="img/b1.jpg" alt="Bài viết 1">
+                    <img class="img-fluid" src="~/Content/img/b1.jpg" alt="Bài viết 1">
                     <ul class="post-tags">
                         <li><a href="#">Cà phê</a></li>
                         <li><a href="#">Tháng 2, 2025</a></li>
@@ -216,7 +200,7 @@
                     <a href="#" class="primary-btn">Xem thêm</a>
                 </div>
                 <div class="col-lg-6 col-md-6 single-blog">
-                    <img class="img-fluid" src="img/b2.jpg" alt="Bài viết 2">
+                    <img class="img-fluid" src="~/Content/img/b2.jpg" alt="Bài viết 2">
                     <ul class="post-tags">
                         <li><a href="#">Công thức</a></li>
                         <li><a href="#">Tháng 2, 2025</a></li>

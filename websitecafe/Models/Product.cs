@@ -18,6 +18,7 @@ namespace websitecafe.Models
         [MaxLength(1000)]
         public string Description { get; set; }
         public string ImageUrl { get; set; }
+        public int View { get; set; }
         public int CategoryId { get; set; }
         [ForeignKey("CategoryId")]
         public Category Category { get; set; }

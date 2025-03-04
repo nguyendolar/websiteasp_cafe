@@ -1,0 +1,110 @@
+﻿@model List<websitecafe.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    /* Phân trang mặc định màu trắng */
+    .pagination .page-item .page-link {
+        background-color: white;
+        color: #6F4E37; /* Màu cà phê */
+        border: 1px solid #6F4E37;
+    }
+
+    /* Khi active sẽ chuyển sang màu cà phê */
+    .pagination .page-item.active .page-link {
+        background-color: #6F4E37;
+        color: white;
+        border-color: #6F4E37;
+    }
+
+    /* Hover hiệu ứng màu cà phê nhạt */
+    .pagination .page-item .page-link:hover {
+        background-color: #EDE0D4;
+        color: #6F4E37;
+    }
+</style>
+<style>
+    .banner-area {
+        background: #5a3d2b;
+        padding: 40px 0;
+        color: white;
+        text-align: left;
+    }
+
+    .primary-btn {
+        background: white;
+        color: #5a3d2b;
+        padding: 6px 12px;
+        border-radius: 4px;
+        font-weight: bold;
+    }
+</style>
+
+<section class="banner-area">
+    <div class="container text-start">
+      
+    </div>
+</section>
+
+
+
+<section class="menu-area section-gap" id="coffee">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="menu-content pb-60 col-lg-10">
+                <div class="title text-center">
+                    <h1 class="mb-10">Danh sách sản phẩm của chúng tôi</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            @foreach (var product in Model)
+            {
+                <div class="col-lg-4">
+                    <div class="single-menu text-center">
+                        <img src="https://toplistcafe.com/wp-content/uploads/2021/01/torani-1.jpg" class="img-fluid mb-3" alt="@product.Name">
+                        <div class="title-div justify-content-between d-flex">
+                            <h4>@product.Name</h4>
+                            <p class="price float-right">@String.Format("{0:N0} VNĐ", product.Price)</p> <!-- Định dạng tiền tệ -->
+                        </div>
+                        <p>@product.Description</p>
+                        <p class="text-muted"><i class="fa fa-eye"></i> @product.View lượt xem</p>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <!-- Phân trang -->
+        <div class="row mt-4">
+            <div class="col-lg-12 text-center">
+                <nav>
+                    <ul class="pagination justify-content-center">
+                        @if (ViewBag.CurrentPage > 1)
+                        {
+                            <li class="page-item">
+                                <a class="page-link" href="@Url.Action("Index", new { page = ViewBag.CurrentPage - 1 })">«</a>
+                            </li>
+                        }
+
+                        @for (int i = 1; i <= ViewBag.TotalPages; i++)
+                        {
+                            <li class="page-item @(i == ViewBag.CurrentPage ? "active" : "")">
+                                <a class="page-link" href="@Url.Action("Index", new { page = i })">@i</a>
+                            </li>
+                        }
+
+                        @if (ViewBag.CurrentPage < ViewBag.TotalPages)
+                        {
+                            <li class="page-item">
+                                <a class="page-link" href="@Url.Action("Index", new { page = ViewBag.CurrentPage + 1 })">»</a>
+                            </li>
+                        }
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>

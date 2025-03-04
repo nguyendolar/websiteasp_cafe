@@ -247,6 +247,10 @@
     <Compile Include="Migrations\202503031356401_InitialCreate.Designer.cs">
       <DependentUpon>202503031356401_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202503041457089_addcolum.cs" />
+    <Compile Include="Migrations\202503041457089_addcolum.Designer.cs">
+      <DependentUpon>202503041457089_addcolum.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\DBWebcafeContext.cs" />
@@ -1041,11 +1045,12 @@
     <Content Include="Views\AdminModules\Menu.cshtml" />
     <Content Include="Views\Authentication\Login.cshtml" />
     <Content Include="Views\Authentication\Signup.cshtml" />
+    <Content Include="Views\Product\Index.cshtml" />
+    <Content Include="Views\Authentication\ForgotPassword.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Authencation\" />
-    <Folder Include="Views\Product\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
@@ -1077,6 +1082,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202503031356401_InitialCreate.resx">
       <DependentUpon>202503031356401_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202503041457089_addcolum.resx">
+      <DependentUpon>202503041457089_addcolum.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

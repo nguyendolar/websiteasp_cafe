@@ -2,7 +2,6 @@
 using System.Linq;
 using websitecafe.Models;
 using Microsoft.EntityFrameworkCore;
-using System.Windows.Forms;
 
 namespace websitecafe.DAO
 {
@@ -10,14 +9,43 @@ namespace websitecafe.DAO
     {
         private readonly DBWebcafeContext _context;
 
-        public ProductDao(DBWebcafeContext context)
+        public ProductDao()
         {
-            _context = context;
+            _context = new DBWebcafeContext();
         }
 
-        public List<Product> GetAllProducts()
+        public List<Product> GetAllProducts(int pageNumber, int pageSize)
         {
-            return _context.Products.Include("Category").ToList();
+            return _context.Products
+                           .Include("Category")
+                           .OrderBy(p => p.Id) // Sắp xếp để đảm bảo thứ tự
+                           .Skip((pageNumber - 1) * pageSize)
+                           .Take(pageSize)
+                           .ToList();
+        }
+
+        public List<Product> GetProductsByPage(int pageNumber, int pageSize, out int totalProducts)
+        {
+            totalProducts = _context.Products.Count();
+
+            return _context.Products
+                           .OrderBy(p => p.Id)
+                           .Skip((pageNumber - 1) * pageSize)
+                           .Take(pageSize)
+                           .ToList();
+        }
+
+        public int GetTotalProductsCount()
+        {
+            return _context.Products.Count();
+        }
+
+        public List<Product> GetTopViewedProducts(int top = 8)
+        {
+            return _context.Products
+                           .OrderByDescending(p => p.View)
+                           .Take(top)
+                           .ToList();
         }
 
         public Product GetProductById(int id)
